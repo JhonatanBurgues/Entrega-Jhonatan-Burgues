@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo 2.jpg">
+    <link rel="shortcut icon" href="./img/logo 2.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
@@ -17,8 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Puffactory_Uy</title>
+    <meta name="description" content="fabricacion de puff artesanales tapizados. Crea tu diseño personalizado">
+    <meta name="keywords" content="PUFF,DECORACION,BANCO,LIVING,DECO,TAPIZADO">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Puffactory_Uy | Registro</title>
 </head>
 
 <body>
@@ -80,41 +82,103 @@
 
 
 
-        <form class="formularioUno">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre "/><Br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido "/><Br>
-            <label for="celular">Celular de contacto:</label>
-            <input type="tel" name="celular" placeholder="Ingresa tu celular"/><Br>
-            <label for="correo">Correo:</label>
-            <input type="email" name="correo" placeholder="Ingresa tu email"/><Br>
-            <label for="password">password:</label>
-            <input type="password" name="password" placeholder="Ingresa un password"/><Br>
-            <label for="acepta">acepto condiciones</label>    
-            <input type="checkbox" name="acepta" value="acepto condiciones"/><Br>
-            <input type="submit" value="enviar registro"/>
-            <input type="reset" value="Limpiar formulario"/>
-        </form>
-
-        <footer>
-
-            <div class="pie">
-    
-                <img src="../img/logo 2.jpg" alt="logo"/>   
-    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et deserunt alias dolore odio blanditiis<br> quidem iure necessitatibus laboriosam inventore.<br> Nesciunt sunt consectetur veniam doloremque <br>deserunt aliquid sint aspernatur asperiores. Tempore? Lorem ipsum dolor sit amet.<br>Nesciunt sunt consectetur veniam doloremque <br>deserunt aliquid sint aspernatur</p>
-    
-                <div class="pieRedes d-flex justify-content-end">
-                    <a href="#" class="fa-brands fa-instagram"></a>
-                    <a href="#" class="fa-brands fa-facebook-f"></a>
-                    <a href="#" class="fa-brands fa-whatsapp"></a>
-                    <a href="#" class="fa-solid fa-envelope"></a>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-            
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Correo Electronico</label>
+                <input type="email" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Departamento</label>
+                <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Montevideo</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Celular</label>
+                <input type="number" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto las condiciones
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+
+    <footer>
+
+        <div class="pie">
+
+            <img src="../img/logo 2.jpg" alt="logo"/>   
+
+            <p> holaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt alias dolore odio blanditiis quidem iure necessitatibus laboriosam inventore. Nesciunt sunt consectetur veniam doloremque deserunt aliquid sint aspernatur asperiores. Tempore? Lorem ipsum dolor sit amet.Nesciunt sunt consectetur veniam doloremque deserunt aliquid sint aspernatur</p>
+
+            <div class="pieRedes d-flex justify-content-end">
+            <a href="#" class="fa-brands fa-instagram"></a>
+            <a href="#" class="fa-brands fa-facebook-f"></a>
+            <a href="#" class="fa-brands fa-whatsapp"></a>
+            <a href="#" class="fa-solid fa-envelope"></a>
             </div>
     
-        </footer>    
+        </div>
+
+
+</footer>  
     
     
     

@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/********* comienzo navbar *********/
+header .navbar {
+  background: #145858;
+}
+
+li a {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li a:hover {
+  color: #7dcacd;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar-brand {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.menuNavegacion {
+  list-style: none;
+}
+
+.redes a {
+  color: #ffffff;
+  margin-left: auto;
+  padding: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.redes a:hover {
+  color: #7dcacd;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/******* fin navbar ********/
+/********* comienzo main *********/
+.main h1 {
+  font-weight: 600;
+  font-size: 54px;
+  font-family: 'Montserrat', sans-serif;
+  color: #145858;
+  text-shadow: 2px 2px 4px grey;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  padding-right: 20px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.main p {
+  color: #217a7d;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 20px;
+  margin-top: 25px;
+}
+
+/******** fin main *********/
+/******** Inicio info comprar *********/
+.bienvenidos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: #7dcacd;
+}
+
+.bienvenidos h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.bienvenidos p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.comprarUno p {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.comprarDos p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.comprarTres p {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+}
+
+@media only screen and (max-width: 720px) {
+  .bienvenidos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/******** Fin info comprar *********/
+/********** COMIENZO--galeria mas vendidos ************/
+.diseniosTitulo {
+  display: -ms-grid;
+  display: grid;
+  background-color: #145858;
+  margin-top: 95px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.diseniosTitulo h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.galeriaContenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vendidos img {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  background-color: #217a7d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vendidos :hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+
+button {
+  padding: 9px 5px;
+  background-color: rgba(18, 223, 134, 0.325);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  color: #5b8e90;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/**********fin--galeria mas vendidos********** */
+/******* Comienzo nosotros en index ******************/
+.comienzoTitulo {
+  display: -ms-grid;
+  display: grid;
+  background-color: #145858;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.comienzoTitulo h3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.comienzo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  margin: auto;
+}
+
+.comienzo img {
+  background-color: antiquewhite;
+  margin: auto;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.comienzo p {
+  max-height: 250px;
+  padding: 35px;
+  text-align: center;
+  color: #145858;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-right: 75px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 720px) {
+  .comienzo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/******* Fin nosotros en index ******************/
+/************* Footer--comienzo **************/
+.pie {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  margin-top: 150px;
+  background-color: #1c927b;
+}
+
+.pie img {
+  height: 150px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.pie p {
+  margin: auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pieRedes {
+  display: -ms-grid;
+  display: grid;
+  width: 150px;
+  margin: auto;
+}
+
+.pieRedes a {
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 720px) {
+  .pie {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/********* fin--footer ***************/
+.formularioUno {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: 450px;
+  margin-right: 450px;
+  background-color: rgba(255, 228, 196, 0.493);
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+
+.bienvenidos-colores {
+  background-color: yellowgreen;
+  font-size: 26px;
+  border: 2px solid yellow;
+}
+
+.bienvenidos-colores {
+  background-color: yellowgreen;
+  font-size: 26px;
+  border: 2px solid blue;
+}
+
+.bienvenidos-colores {
+  background-color: yellowgreen;
+  font-size: 26px;
+  border: 2px solid red;
+}
+
+.h1 {
+  color: #1caa3b;
+}
+/*# sourceMappingURL=estilos.css.map */

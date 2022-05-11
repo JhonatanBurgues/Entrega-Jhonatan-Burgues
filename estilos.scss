@@ -16,7 +16,7 @@ $color4: #145858;
 /********* comienzo navbar *********/
 
 header .navbar  {
-    background: $color5;
+    background: $color4;
 }
 
 li a {
@@ -67,7 +67,7 @@ li a:hover {
     font-weight: 600;
     font-size: 54px;
     font-family: 'Montserrat', sans-serif;
-    color: $color2;
+    color: $color4;
     text-shadow: 2px 2px 4px grey;
     animation-duration: 3s;
     animation-name: slidein;
@@ -87,9 +87,10 @@ li a:hover {
 
 .main p {
     color: $color3;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     padding-right: 20px;
+    margin-top: 25px;
 }
 
 /******** fin main *********/
@@ -182,7 +183,7 @@ li a:hover {
     margin: auto;
     background-color: $color3;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .vendidos :hover img {
@@ -337,4 +338,30 @@ button:hover {
     text-align: center;
     padding: 25px;
     font-size: 25px;
+}
+
+$info: (
+    15px: yellow,
+    20px: blue,
+    25px: red
+);
+
+@each $sizes, $colores in $info {
+    .bienvenidos-#{colores} {
+        background-color: yellowgreen;
+        font-size: 26px;
+        border: 2px solid $colores;
+
+
+
+
+    }
+
+
+
+}
+
+
+.h1 {
+    color: #1caa3b;
 }
