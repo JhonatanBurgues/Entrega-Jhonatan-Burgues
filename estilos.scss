@@ -94,14 +94,51 @@ li a:hover {
 }
 
 /******** fin main *********/
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #145858c8;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.video video {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+@media only screen and (max-width:920px) {
+    .video {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media only screen and (max-width:670px) {
+    .video {
+    grid-template-columns: 1fr;
+}
+}
 
 /******** Inicio info comprar *********/
 
 .bienvenidos {
     display: grid;    
     grid-template-columns: 1fr 1fr 1fr;
+    min-height: 400px;
     background-color: #7dcacd;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
     
 }
 
@@ -111,6 +148,7 @@ li a:hover {
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+
 }
 
 
@@ -133,6 +171,13 @@ li a:hover {
     justify-content: right;
     text-align: right;
 }
+
+@media only screen and (max-width:920px) {
+    .bienvenidos {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+} 
 
 @media only screen and (max-width:720px) {
     .bienvenidos {

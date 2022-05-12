@@ -95,13 +95,62 @@ li a:hover {
 }
 
 /******** fin main *********/
+.video {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #145858c8;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 920px) {
+  .video {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .video {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 /******** Inicio info comprar *********/
 .bienvenidos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  min-height: 400px;
   background-color: #7dcacd;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-top: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .bienvenidos h2 {
@@ -137,6 +186,16 @@ li a:hover {
       -ms-flex-pack: right;
           justify-content: right;
   text-align: right;
+}
+
+@media only screen and (max-width: 920px) {
+  .bienvenidos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 720px) {
