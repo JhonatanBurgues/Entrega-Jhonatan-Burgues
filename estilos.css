@@ -55,7 +55,7 @@ li a:hover {
   font-weight: 600;
   font-size: 54px;
   font-family: 'Montserrat', sans-serif;
-  color: #145858;
+  color: #217a7d;
   text-shadow: 2px 2px 4px grey;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -111,6 +111,8 @@ li a:hover {
   gap: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .video video {
@@ -120,6 +122,8 @@ li a:hover {
   margin: auto;
   width: 100%;
   border-radius: 5px;
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 920px) {
