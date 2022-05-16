@@ -2,18 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-$color1: #ffffff;
-$color2: #7dcacd;
-$color3:  #217a7d; 
-$color4: #145858;
+body {
+    background-color: #4b4b4b;
+}
+
+/****** variable COMIENZO ******/
+
+@import "variables";
+
+/****** variable FIN ******/
+
+@mixin fontStyle($fontSize) {
+    font-size: $fontSize;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
 
 
-
-
-/********* comienzo navbar *********/
+/********* COMIENZO navbar *********/
 
 header .navbar  {
     background: $color4;
@@ -24,13 +34,12 @@ li a {
     font-size: 20px;
     color: $color1;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    
+    transition: 0.2s;
 }
 
 li a:hover {
-    color:#7dcacd;
-    transition: 0.2s;
+    color:$color2;
+    transform: scale(1.10);
 }
 
 .navbar-brand {
@@ -49,29 +58,29 @@ li a:hover {
     font-size: 25px;
     text-decoration: none;
     border-radius: 2px;
-
+    transition: 0.2s
 }
 
 .redes a:hover {
-    color:#7dcacd;
-    transition: 0.3s;
+    color:$color2;
+    transform: scale(1.10);
 }
 
-/******* fin navbar ********/
+/******* FIN navbar ********/
 
 
+/********* COMIENZO main *********/
 
-/********* comienzo main *********/
-
-.main h1 {
-    font-weight: 600;
-    font-size: 54px;
-    font-family: 'Montserrat', sans-serif;
-    color: $color3;
-    text-shadow: 2px 2px 4px grey;
+main h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: $color1;
+    text-shadow: 2px 2px 4px $color4;
     animation-duration: 3s;
     animation-name: slidein;
     padding-right: 20px;
+    font-family: $font1;
+    text-align: center;
 }
 
     @keyframes slidein {
@@ -85,136 +94,80 @@ li a:hover {
     }
 }
 
-.main p {
-    color: $color3;
+main p {
+    color: $color1;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     padding-right: 20px;
-    margin-top: 25px;
+    margin-top: 28px;
+    text-align: center;
 }
 
-/******** fin main *********/
-.video {
+main img {
+    width: 500px;
+    transition: all .2s;
+}
+
+main img:hover {
+    transform: scale(1.10);
+}
+
+/******** FIN main *********/
+
+
+
+/******** COMIENZO videos *********/
+
+@import "videos";
+
+/******** FIN videos *********/
+
+
+/******** COMIENZO info comprar *********/
+
+.info .comprar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content:space-around;
-    background-color: #145858c8;
-    margin-top: 80px;
-    margin-bottom: 100px;
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 20px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    background-color: $color2;
+    border-radius: 10px;
 }
 
-.video video {
-    display: flex;
-    margin: auto;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+.comprar i {
+    @include fontStyle(45px);
+    margin-top: 15px;
+    color: #ffffff
 }
 
-@media only screen and (max-width:920px) {
-    .video {
-    grid-template-columns: 1fr 1fr;
-}
+.comprar h2 {
+    @include fontStyle(35px);
 }
 
-@media only screen and (max-width:670px) {
-    .video {
-    grid-template-columns: 1fr;
+.comprar p {
+    @include fontStyle(18px);
 }
-}
-
-/******** Inicio info comprar *********/
-
-.bienvenidos {
-    display: grid;    
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 400px;
-    background-color: #7dcacd;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    padding-top: 60px;
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.bienvenidos h2 {
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-
-}
-
-
-
-.bienvenidos p {
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-}
-
-.comprarUno p{
-    justify-content: left;
-}
-
-.comprarDos p{
-    justify-content: center;
-    text-align: center;
-}
-
-.comprarTres p{
-    justify-content: right;
-    text-align: right;
-}
-
-@media only screen and (max-width:920px) {
-    .bienvenidos {
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-}
-} 
-
-@media only screen and (max-width:720px) {
-    .bienvenidos {
-    grid-template-columns: 1fr;
-}
-}   
 
 /******** Fin info comprar *********/
 
 
 
-
-/********** COMIENZO--galeria mas vendidos ************/
+/******** COMIENZO--galeria mas vendidos **********/
 
 .diseniosTitulo {
     display: grid;    
     background-color: $color4;
-    margin-top: 95px;
+    margin-top: 200px;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .diseniosTitulo h2 {
-    justify-content: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    @include fontStyle(40px);
     padding: 15px;
     font-weight: 600;
-    font-size: 40px;
     color: #ffffff;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
 }
-
 
 .galeriaContenedor {
     display: grid;
@@ -225,16 +178,17 @@ li a:hover {
 }
 
 .vendidos img {
-    height: 600px;
+    height: 550px;
     display: flex;
     margin: auto;
     background-color: $color3;
     border-radius: 5px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .2s;
 }
 
-.vendidos :hover img {
-    transform: scale(1.5);
+.galeriaContenedor img:hover {
+    transform: scale(1.10);
 }
 
 .boton {
@@ -242,76 +196,86 @@ li a:hover {
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 90px;
-
 }
 
 button {
     padding: 9px 5px;
-    background-color: rgba(18, 223, 134, 0.325);
+    background-color: $color3;
+    color: $color1;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover {
-    color:#5b8e90;
-    transition: 0.2s;
+    color:$color2;
+    transition: 0.2s;   
 }
 
+/* tapices*/
+
+.tapiContenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.telas img {
+    margin: auto;
+    display: flex;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /**********fin--galeria mas vendidos********** */
 
 
 
-
 /******* Comienzo nosotros en index ******************/
-
 
 .comienzoTitulo {
     display: grid;    
-    background-color: #145858;
-    margin-top: 100px;
+    background-color: $color4;
+    margin-top: 250px;
     margin-bottom: 80px;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .comienzoTitulo h3 {
-    justify-content: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    @include fontStyle(40px);
     padding: 15px;
     font-weight: 600;
-    font-size: 40px;
-    color: #ffffff;
-
+    color: $color1;
 }
 
 .comienzo {
     display: grid;    
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 40px;
     margin: auto;
+    margin-bottom: 250px;
 }
 
 .comienzo img {
-    background-color: antiquewhite;
+    background-color: $color1;
     margin: auto;
-    height: 350px;
+    height: 370px;
     border-radius: 10px;
 }
 
 .comienzo p {
-    max-height: 250px;
-    padding: 35px;
+    max-height: 300px;
+    padding: 32px;
     text-align: center;
-    color: #145858;
-    align-items: center;
-    justify-content: center;
+    color: $color1;
+    @include fontStyle(22px);
     margin: auto;
     padding-right: 75px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width:720px) {
@@ -320,9 +284,7 @@ button:hover {
 }
 }  
 
-
 /******* Fin nosotros en index ******************/
-
 
 
 
@@ -332,19 +294,20 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     padding: 25px;
-    margin-top: 150px;
-    background-color: #1c927b;
+    margin-top: 100px;
+    background-color: $color3;
 }
 
 .pie img {
     height: 150px;
     margin: auto;
     border-radius: 5px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .pie p {
     margin: auto;
-    color: #ffffff;
+    color: $color1;
     text-align: center;
 }
 
@@ -355,12 +318,18 @@ button:hover {
 }
 
 .pieRedes a {
-    color: #ffffff;
+    color: $color1;
     justify-content: center;
     margin: auto;
     font-size: 25px;
     text-decoration: none;
     border-radius: 2px;
+    transition: 0.2s;
+}
+
+.pieRedes a:hover {
+    color:$color2;
+    transform: scale(1.10);
 }
 
 @media only screen and (max-width:720px) {
@@ -369,22 +338,14 @@ button:hover {
 }
 }
 
-
 /********* fin--footer ***************/
 
 
-.formularioUno {
-    align-content: center;
-    justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: 450px;
-    margin-right: 450px;
-    background-color: rgba(255, 228, 196, 0.493);
-    border-radius: 15px;
-    text-align: center;
-    padding: 25px;
-    font-size: 25px;
+/****** formulario Inicio *******/
+
+form {
+    background-color: $color2;
+    padding: 45px;
 }
 
 $info: (
@@ -398,17 +359,8 @@ $info: (
         background-color: yellowgreen;
         font-size: 26px;
         border: 2px solid $colores;
-
-
-
-
     }
-
-
-
 }
 
+/****** formulario Fin *******/
 
-.h1 {
-    color: #1caa3b;
-}
