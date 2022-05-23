@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--  Comienzo etiquetas Meta  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="© Puffactory Uy">
+    <meta name="language" content="es"/>
+    <meta name="description" content="fabricacion de puff artesanales tapizados. Crea tu diseño personalizado. Galeria de diseños">
+    <meta name="keywords" content="PUFF,DECORACION,BANCO,LIVING,DECO,TAPIZADO">
+    <!--  Fin etiquetas Meta  -->
     <link rel="shortcut icon" href="./img/logo 2.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <meta name="copyright" content="© Puffactory Uy">
-    <meta name="language" content="es"/>
-    <meta name="description" content="fabricacion de puff artesanales tapizados. Crea tu diseño personalizado. Galeria de diseños">
-    <meta name="keywords" content="PUFF,DECORACION,BANCO,LIVING,DECO,TAPIZADO">
     <link rel="stylesheet" href="../estilos.css">
-    <title>Puffactory_Uy | Registro</title>
+    <title>Puffactory_Uy | Puff Artesanales</title>
 </head>
 
 <body>
@@ -70,8 +72,8 @@
             </div>
             <section class="d-flex flex-wrap align-items-center text-right col-12 col-md-7">
             <div >
-                <h1>REGISTRATE <BR> EN NUESTRA WEB</h1>
-                <p>Registrate en nuestras web, enterate de nuestrosultimos diseños <br> y obtene beneficios</p>
+                <h1>CANALES DE<BR>CONTACTO</h1>
+                <p>Envianos un mail, escribinos por Whatapp y seguinos en Instagram y Facebook para enterarte de todas nuestras novedades.</p>
             </div>
             </section>
         </div>
@@ -136,53 +138,55 @@
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Dejanos tu comentario o pregunta.</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
+            </div>
             <button class="btn btn-info" type="submit">Enviar formulario</button>
         </section>
+        <script>
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+                }, false);
+            })();
+            </script>
         </form>
         
-        <script>
 
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-            var forms = document.getElementsByClassName('needs-validation');
-            var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-                }, false);
-            });
-            }, false);
-        })();
-        </script>
 
+    <!--  Comienzo Footer   -->
     <footer>
 
         <div class="pie">
             <img src="../img/logo 2.jpg" alt="logo"/>   
             <p> Somos Puffactory_Uy<br>Gracias por visitarnos.<br>Seguinos en nuestras redes y apoya el proyecto.<br>Todos los derechos reservados.</p>
             <div class="pieRedes d-flex justify-content-end">
-            <a href="https://www.instagram.com/puffactory_uy/" target="_blank" class="fa-brands fa-instagram"></a>
-            <a href="#" class="fa-brands fa-facebook-f"></a>
-            <a href="#" class="fa-brands fa-whatsapp"></a>
-            <a href="#" class="fa-solid fa-envelope"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-whatsapp"></a>
+                <a href="#" class="fa-solid fa-envelope"></a>
             </div>
         </div>
 
-</footer>  
+    </footer>    
+    <!--  Fin Footer   --> 
     
-    
-    
+
+
+
+            <!--  Comienzo Script   -->
     <script src="https://kit.fontawesome.com/62e1b6519a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
-
-	
+    <!--  Fin Script   -->
     </body>
     </html>

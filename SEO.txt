@@ -1,7 +1,0 @@
-Realize modificaciones en titulos de cada seccion.
-Agregue etiquetas meta con descripcion del contenido y keywords.
-
-Keywords agregadas "PUFF,DECORACION,BANCO,LIVING,DECO,TAPIZADO"
-Descripcion agregada "fabricacion de puff artesanales tapizados. Crea tu diseño personalizado. Galeria de diseños"
-
-Se agrega etiquetas meta con copyrigth y etiquetas de idioma.
