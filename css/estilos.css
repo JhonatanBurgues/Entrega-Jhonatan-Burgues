@@ -6,15 +6,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-image: url(../img/pared4.jpg);
+}
+
 /****** variable COMIENZO ******/
 /****** variable FIN ******/
 /********* COMIENZO navbar *********/
 header .navbar {
-  background: #145858;
+  background: #217a7dc7;
 }
 
-.navbar button {
-  color: #ffffff;
+.lista button {
+  color: #000000;
 }
 
 li a {
@@ -27,13 +31,13 @@ li a {
 }
 
 li a:hover {
-  color: #7dcacd;
+  color: #000000;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .navbar-brand {
-  width: 60px;
+  width: 55px;
   border-radius: 10px;
 }
 
@@ -53,48 +57,122 @@ li a:hover {
 }
 
 .redes a:hover {
-  color: #7dcacd;
+  color: #000000;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.navbar button {
+  color: black;
 }
 
 /******* FIN navbar ********/
 /********* COMIENZO main *********/
 .banner h1 {
-  font-weight: 700;
-  font-size: 70px;
-  color: #145858;
-  text-shadow: 2px 2px 4px #145858;
-  font-family: "Dancing Script", cursive;
-  text-align: right;
-  padding-right: 20px;
-  margin-top: 15x;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 5px 6px 5px #000000;
+  text-align: center;
+  margin: auto;
+}
+
+.banner .h1 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-shadow: 5px 8px 5px #000000;
 }
 
 .banner p {
   color: #ffffff;
-  font-size: 23px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  background-color: #217a7dc7;
   text-align: center;
-  background-color: #217a7d;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 15px;
-  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 25px;
+  font-style: italic;
 }
 
 main img {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 main img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media only screen and (max-width: 450px) {
+  .banner h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .banner .h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .banner h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .banner .h1 {
+    font-size: 35px;
+  }
 }
 
 /******** FIN main *********/
+/******** COMIENZO main no home ******/
+.dise {
+  margin-top: 120px;
+}
+
+.dise {
+  margin-top: 120px;
+}
+
+.dise h1 {
+  font-weight: 400;
+  font-size: 8vw;
+  color: #ffffff;
+  text-shadow: 5px 6px 5px #000000;
+  text-align: center;
+  padding-right: 20px;
+  margin-top: 15px 20px 15px;
+}
+
+.dise .h1 {
+  font-weight: 600;
+  font-size: 10vw;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-shadow: 5px 8px 5px #000000;
+}
+
+.dise p {
+  color: #ffffff;
+  font-size: 2vw;
+  background-color: #217a7dc7;
+  text-align: center;
+  border-radius: 25px;
+  padding: 15px;
+  margin: auto;
+}
+
 /******** COMIENZO videos *********/
 .video {
   display: -ms-grid;
@@ -106,14 +184,11 @@ main img:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #7dcacd;
   margin-top: 80px;
   margin-bottom: 200px;
   gap: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .video video {
@@ -157,6 +232,7 @@ main img:hover {
   -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   min-height: 300px;
+  width: auto;
   background-color: #145858c8;
   border-radius: 10px;
 }
@@ -179,9 +255,10 @@ main img:hover {
           justify-content: center;
   text-align: center;
   color: #ffffff;
+  text-shadow: 2px 2px 4px black;
 }
 
-.comprar p {
+p {
   font-size: 18px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -190,14 +267,20 @@ main img:hover {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 320px) {
+  .comprar h2 {
+    font-size: 28px;
+  }
+}
+
 /******** Fin info comprar *********/
-/******** COMIENZO--galeria mas vendidos **********/
+/******** COMIENZO--galeria mas vendidos y disenos **********/
 .diseniosTitulo {
   display: -ms-grid;
   display: grid;
-  background-color: #7dcacd;
+  background-color: #145858c8;
   margin-top: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -233,8 +316,9 @@ main img:hover {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  height: 550px;
-  background-color: #217a7d;
+  height: 580px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, rgba(33, 122, 125, 0.7)), color-stop(66%, rgba(64, 96, 97, 0.7)));
+  background: linear-gradient(180deg, rgba(33, 122, 125, 0.7) 33%, rgba(64, 96, 97, 0.7) 66%);
   -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-align: center;
@@ -249,7 +333,9 @@ main img:hover {
   border-radius: 5px;
   -webkit-transition: all .2s;
   transition: all .2s;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .card img:hover {
@@ -298,9 +384,10 @@ main img:hover {
   margin-bottom: 90px;
 }
 
-button {
+.boton button {
   padding: 9px 5px;
-  background-color: #217a7d;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, rgba(33, 122, 125, 0.7)), color-stop(66%, rgba(125, 202, 205, 0.7)));
+  background: linear-gradient(180deg, rgba(33, 122, 125, 0.7) 33%, rgba(125, 202, 205, 0.7) 66%);
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -310,44 +397,18 @@ button {
           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button:hover {
+.boton button:hover {
   color: #7dcacd;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-/* tapices*/
-.tapiContenedor {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-
-.telas img {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/**********fin--galeria mas vendidos********** */
-/******* Comienzo nosotros en index ******************/
+/******** FIN--galeria mas vendidos y disenos **********/
+/******* Comienzo nosotros ******************/
 .comienzoTitulo {
   display: -ms-grid;
   display: grid;
-  background-color: #7dcacd;
+  background-color: #145858c8;
   margin-top: 250px;
   margin-bottom: 80px;
   text-shadow: 2px 2px 4px #000000;
@@ -366,12 +427,18 @@ button:hover {
 }
 
 .nos img {
-  max-height: 450px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 10px;
   -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #145858c8;
+  background-color: #ffffff;
   padding: 15px;
+}
+
+.nosIndex img {
+  border-radius: 10px;
 }
 
 .nos .nosIndex {
@@ -397,7 +464,7 @@ button:hover {
           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/******* Fin nosotros en index ******************/
+/******* Fin nosotros  ******************/
 /************* Footer--comienzo **************/
 .pie {
   display: -ms-grid;
@@ -406,7 +473,7 @@ button:hover {
       grid-template-columns: 1fr 1fr 1fr;
   padding: 25px;
   margin-top: 100px;
-  background-color: #217a7d;
+  background-color: #217a7dc7;
 }
 
 .pie img {
@@ -438,7 +505,7 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   border-radius: 2px;
   -webkit-transition: 0.2s;
@@ -446,7 +513,7 @@ button:hover {
 }
 
 .pieRedes a:hover {
-  color: #7dcacd;
+  color: #000000;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -463,10 +530,24 @@ button:hover {
 form {
   background-color: #7dcacd;
   padding: 45px;
+  margin-top: 240px;
 }
 
 /****** formulario Fin *******/
-html {
-  scroll-behavior: smooth;
+.carousel-inner img {
+  width: auto;
+  height: 700px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 720px) {
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.carrusel .row {
+  margin-top: 200px;
 }
 /*# sourceMappingURL=estilos.css.map */
