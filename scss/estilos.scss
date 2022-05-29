@@ -436,19 +436,19 @@ form {
 
 /****** formulario Fin *******/
 
-.carousel-inner img {
+.carousel img {
     width: auto;
     height: 700px;
     border-radius: 15px;
-  }
-  
-  @media only screen and (max-width: 720px) {
-    .carousel-inner img {
-      width: 100%;
-      height: auto;
+}
+
+@media only screen and (max-width: 720px) {
+    .carousel img {
+    width: 100%;
+    height: auto;
     }
-  }
-  
+}
+
 
 
 
