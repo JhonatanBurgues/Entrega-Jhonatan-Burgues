@@ -534,14 +534,15 @@ form {
 }
 
 /****** formulario Fin *******/
-.carousel-inner img {
+.carousel img {
   width: auto;
   height: 700px;
   border-radius: 15px;
+  background-color: aquamarine;
 }
 
 @media only screen and (max-width: 720px) {
-  .carousel-inner img {
+  .carousel img {
     width: 100%;
     height: auto;
   }
