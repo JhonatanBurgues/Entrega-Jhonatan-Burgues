@@ -226,6 +226,27 @@ p {
 
 /******** Fin info comprar *********/
 
+.entregas {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    
+
+    img {
+        display: flex;
+        object-fit: cover;
+        max-width: 480px;
+        width: 100%;
+        height:100%;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+        align-items: center;
+        border-radius: 15px;
+    }
+}
 
 
 /******** COMIENZO--galeria mas vendidos y disenos **********/
@@ -374,6 +395,20 @@ p {
 
 
 
+/****** formulario Inicio *******/
+
+form {
+    background-color: $color2;
+    padding: 45px;
+    margin-top: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/****** formulario Fin *******/
+
+
+
 /************* Footer--comienzo **************/
 
 .pie {
@@ -426,29 +461,11 @@ p {
 /********* fin--footer ***************/
 
 
-/****** formulario Inicio *******/
 
-form {
-    background-color: $color2;
-    padding: 45px;
-    margin-top: 240px;
-}
 
-/****** formulario Fin *******/
 
-.carousel img {
-    width: auto;
-    height: 700px;
-    border-radius: 15px;
-    background-color: aquamarine;
-}
 
-@media only screen and (max-width: 720px) {
-    .carousel img {
-    width: 100%;
-    height: auto;
-    }
-}
+
 
 
 
